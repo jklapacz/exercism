@@ -1,6 +1,9 @@
 class HelloWorld {
-    static hello( /* Parameters go here */ ) {
-        // Your code here
+    static hello(name?: string) {
+        const displayedName = name || "World"
+
+        return `Hello, ${displayedName}!`;
+        // return "Hello, World!"
     }
 }
 
